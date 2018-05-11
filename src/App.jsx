@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from './Navbar.jsx';
 import Content from './Content.jsx';
+import SideBar from './SideBar.jsx';
 
 class App extends Component {
 
