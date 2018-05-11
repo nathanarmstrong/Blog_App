@@ -8,7 +8,7 @@ class Article extends Component {
      const image = this.props.image;
     return (
         <div onClick={((e) =>  this.props.openArticalPage(e, this.props.id)) } className="article">
-            <div className="">
+            <div className="preview">
                 <img src={image.src} alt={image.alt}  />
                 <p>{this.props.discription}</p>
             </div>

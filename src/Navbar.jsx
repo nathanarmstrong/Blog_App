@@ -5,23 +5,25 @@ class Navbar extends Component {
     console.log("Rendering <Navbar />");
     console.log(this.props.loggedin)
     let buttonDiv;
+    let search = <input type="text" onKeyUp=""/>
     if(this.props.loggedin == null){
       buttonDiv = 
-        <div>
+        <div className="loggin-button">
           <button>Log In</button>
+          {search}
         </div>
     }else{
       buttonDiv =
-        <div>
+        <div className="user-buttons">
           <button>+</button>
           <button>*</button>
+          {search}
         </div>
     }
     return (
         <div className="navbar">
             <a className="navbar-brand" href="/" >Blog</a>
             {buttonDiv}
-            <input type="text" onKeyUp=""/>
         </div>
     );
   }
